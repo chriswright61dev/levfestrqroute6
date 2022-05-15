@@ -1,9 +1,8 @@
-// import React from "react";
-import { DateFormat } from "../../../utilities/utilities";
+import { formatDate } from "../../../utilities/formatDate";
 
-function ShowYear(props) {
-  if (props.date) {
-    const formattedDate = DateFormat(props.date);
+function ShowYear({ date }) {
+  if (date) {
+    const formattedDate = formatDate(date);
     //  check that the Date Data exists
     // so split errors don't occur in the formatting funcyion
     return <>{formattedDate.year}</>;

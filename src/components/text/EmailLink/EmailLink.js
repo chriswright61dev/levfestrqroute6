@@ -1,8 +1,7 @@
 // import React from "react";
 import "./EmailLink.css";
-function EmailLink(props) {
-  const link = "mailto:" + props.source;
-  const linkText = props.linkText;
+function EmailLink({ source, linkText }) {
+  const link = "mailto:" + source;
   return (
     <p className="email_link">
       <a href={link}>Email: {linkText}</a>

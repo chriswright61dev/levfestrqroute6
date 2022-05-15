@@ -1,10 +1,9 @@
-// import React from 'react'
 import "./WebsiteLink.css";
-function WebsiteLink(props) {
+function WebsiteLink({ source, linkText }) {
   return (
     <p className="website_link">
-      <a href={props.source} target="_blank" rel="noopener noreferrer">
-        WebSite: {props.linkText}
+      <a href={source} target="_blank" rel="noopener noreferrer">
+        WebSite: {linkText}
       </a>
     </p>
   );

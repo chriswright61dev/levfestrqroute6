@@ -1,8 +1,7 @@
-import React from "react";
-import { DateFormat } from "../../../utilities/utilities";
-function ShowMonth(props) {
-  if (props.date) {
-    const formattedDate = DateFormat(props.date);
+import { formatDate } from "../../../utilities/formatDate";
+function ShowMonth({ date }) {
+  if (date) {
+    const formattedDate = formatDate(date);
     //  check that the Date Data exists
     // so split errors don't occur in the formatting funcyion
     return <>{formattedDate.month}</>;
