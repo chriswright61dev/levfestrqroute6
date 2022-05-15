@@ -13,6 +13,20 @@
 .front_page_big_card img {
   border-radius: 3rem;
 }
+.front_page_big_card__overlay {
+  /* link is applied to the image */
+  pointer-events: none;
+  /* make sure the link is visible */
+  border-radius: 3rem;
+
+  background-color: var(--bg_overlay_color);
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 
 .front_page_big_card__text_top {
   /* link is applied to the image */
@@ -20,7 +34,7 @@
   /* make sure the link is visible */
   border-radius: 3rem;
 
-  background-color: var(--bg_overlay_color);
+  /* background-color: var(--bg_overlay_color); */
   height: 100%;
 
   position: absolute;
@@ -76,6 +90,9 @@
     height: 100%;
     min-height: 220px;
     padding-top: 1rem;
+    /* this padding pushes the overlay down */
+    margin-bottom: -1rem;
+
     position: absolute;
     text-align: left;
     top: 0;

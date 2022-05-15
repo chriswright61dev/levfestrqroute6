@@ -23,6 +23,7 @@ function FrontPageBigCard({
       <div className="front_page_big_card__text_bottom">
         <p>{bottomText}</p>
       </div>
+      <div className="front_page_big_card__overlay"></div>
       <Link to={link}>
         <ImageContainer
           source={IMGsource}
