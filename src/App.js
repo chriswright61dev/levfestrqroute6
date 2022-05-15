@@ -1,6 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
+
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 //pages
 import Home from "./pages/Home";
 import Events from "./pages/Events";
@@ -14,6 +18,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/events" element={<Events />}></Route>
@@ -23,6 +28,7 @@ function App() {
           <Route path="/venues" element={<Venues />}></Route>
           <Route path="/venues/:id" element={<Venue />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </QueryClientProvider>
   );
