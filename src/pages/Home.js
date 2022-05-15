@@ -1,5 +1,5 @@
 import useBasic from "../data/queryHooks/useBasic";
-
+import FrontPage from "../modules/FrontPage/FrontPage";
 function Home() {
   const basicFestivalData = useBasic();
 
@@ -8,9 +8,13 @@ function Home() {
   } else {
     const festData = basicFestivalData.data[0];
     console.log("festData", festData);
-  }
 
-  return <div>home page</div>;
+    return (
+      <div>
+        <FrontPage />
+      </div>
+    );
+  }
 }
 
 export default Home;
