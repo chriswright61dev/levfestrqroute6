@@ -1,5 +1,6 @@
 import React from "react";
 import "./EventDetail.css";
+import HtmlBox from "../../../../components/text/HtmlBox/HtmlBox";
 import DateTime from "../../../../components/text/DateTime/DateTime";
 import VenueLink from "../../../../components/text/VenueLink/VenueLink";
 import OldEvent from "../../../../components/OldEvent/OldEvent";
@@ -20,10 +21,7 @@ function EventDetail({ data, old }) {
           {old ? <OldEvent date={es.event_date_time} /> : null}
           <p>{es.event_introduction}</p>
 
-          <div
-            className="event_body"
-            dangerouslySetInnerHTML={{ __html: es.event_body }}
-          />
+          <HtmlBox className="event_body" content={es.event_body} />
         </div>
 
         <div className="event_detail_images">
