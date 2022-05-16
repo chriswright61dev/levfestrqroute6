@@ -1,4 +1,5 @@
 import React from "react";
+import HtmlBox from "../../../../components/text/HtmlBox/HtmlBox";
 import ImageContainer from "../../../../components/image/ImageContainer/ImageContainer";
 import "./NewsDetail.css";
 function NewsDetail({ data }) {
@@ -9,10 +10,8 @@ function NewsDetail({ data }) {
       <div className="news_detail">
         <div className="news_detail_text">
           <h3>{ns.news_title}</h3>
-          <div
-            className="news_body"
-            dangerouslySetInnerHTML={{ __html: ns.news_body }}
-          />
+
+          <HtmlBox className="news_body" content={ns.news_body} />
         </div>
 
         <div className="news_detail_images">
