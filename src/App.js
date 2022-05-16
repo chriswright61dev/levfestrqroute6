@@ -2,7 +2,7 @@ import "./App.css";
 import "./colours.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
-
+import PageTop from "./components/utility/PageTop/PageTop";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -19,6 +19,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
+        <PageTop />
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
