@@ -23,19 +23,3 @@ export default function PageTop() {
 
 //   return null;
 // }
-
-// this locks up
-
-// import { useNavigate } from "react-router-dom";
-// export default function PageTop() {
-//   const history = useNavigate();
-//   useEffect(() => {
-//     const unlisten = history.listen((location, action) => {
-//       if (action !== "POP") {
-//         window.scrollTo(0, 0);
-//       }
-//     });
-//     return () => unlisten();
-//   }, []);
-//   return null;
-// }
