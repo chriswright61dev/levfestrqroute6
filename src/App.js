@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 //pages
 import Home from "./pages/Home";
 import Events from "./pages/Events";
+import EventsOld from "./pages/EventsOld";
 import Event from "./pages/Event";
 import Venues from "./pages/Venues";
 import Venue from "./pages/Venue";
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/events" element={<Events />}></Route>
+          <Route path="/events/old" element={<EventsOld />}></Route>
           <Route path="/events/:id" element={<Event />}></Route>
           <Route path="/news" element={<News />}></Route>
           <Route path="/news/:id" element={<NewsItem />}></Route>
