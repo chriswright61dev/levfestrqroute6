@@ -1,7 +1,7 @@
 import EventsList from "../modules/Events/EventsList/EventsList";
 import useEventYear from "../data/queryHooks/useEventYear";
 import Loader from "../components/Loader/Loader";
-function OldEvents() {
+function EventsOld() {
   const thisYear = new Date().getFullYear();
   // add some state for the year and a dropdown to change it
   const allEventData = useEventYear(thisYear);
@@ -19,4 +19,4 @@ function OldEvents() {
   }
 }
 
-export default OldEvents;
+export default EventsOld;

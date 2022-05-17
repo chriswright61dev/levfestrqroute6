@@ -2,9 +2,9 @@ import useVenue from "../data/queryHooks/useVenue";
 import VenueList from "../modules/Venues/VenueList/VenueList";
 import Loader from "../components/Loader/Loader";
 
-function Venues() {
+function VenuesAll() {
   const allVenueData = useVenue();
-  // get all the venues then filter them to those with actual events on
+  // get All the venues
 
   if (allVenueData.isLoading) {
     return <Loader />;
@@ -21,4 +21,4 @@ function Venues() {
   }
 }
 
-export default Venues;
+export default VenuesAll;
