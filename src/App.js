@@ -12,6 +12,7 @@ import Events from "./pages/Events";
 import EventsOld from "./pages/EventsOld";
 import Event from "./pages/Event";
 import Venues from "./pages/Venues";
+import VenuesAll from "./pages/VenuesAll";
 import Venue from "./pages/Venue";
 import News from "./pages/News";
 import NewsItem from "./pages/NewsItem";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/news" element={<News />}></Route>
           <Route path="/news/:id" element={<NewsItem />}></Route>
           <Route path="/venues" element={<Venues />}></Route>
+          <Route path="/venues/all" element={<VenuesAll />}></Route>
           <Route path="/venues/:id" element={<Venue />}></Route>
         </Routes>
         <Footer />
