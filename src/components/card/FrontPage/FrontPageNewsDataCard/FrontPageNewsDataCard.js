@@ -2,7 +2,7 @@ import "./FrontPageNewsDataCard.css";
 import FrontPageDataCardBlock from "../FrontPageDataCardBlock/FrontPageDataCardBlock.js";
 function FrontPageNewsDataCard({ latestNews }) {
   return (
-    <div className="front_page_event_data_cards">
+    <div className="front_page_news_data_cards">
       {latestNews.map((newsitem) => {
         return (
           <FrontPageDataCardBlock
