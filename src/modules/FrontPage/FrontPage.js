@@ -1,3 +1,5 @@
+// just show news data
+
 import "./FrontPage.css";
 import svglogo from "../../images/levfestlogo.svg";
 import herobg from "../../images/hero1.jpg";

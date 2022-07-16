@@ -1,5 +1,6 @@
 // lets simplify this page - just adverts news and logo?
-
+import FrontPage from "../modules/FrontPage/FrontPage";
+import Loader from "../components/Loader/Loader";
 // data hooks
 import useBasic from "../data/queryHooks/useBasic";
 // import useEvent from "../data/queryHooks/useEvent";
@@ -7,8 +8,6 @@ import useNews from "../data/queryHooks/useNews";
 // import useVenue from "../data/queryHooks/useVenue";
 import useAdverts from "../data/queryHooks/useAdverts";
 // other components
-import Loader from "../components/Loader/Loader";
-import FrontPage from "../modules/FrontPage/FrontPage";
 
 function Home() {
   const thisyear = new Date().getFullYear();
@@ -37,7 +36,8 @@ function Home() {
     const newsData = allNewsData.data;
     // const venueData = allVenueData.data;
     const advertsData = allAdvertsData.data;
-    let NewsPostSize = 4;
+    // let NewsPostSize = 4;
+    let NewsPostSize = 9;
     const latestNews = newsData.slice(0, NewsPostSize);
     // const eventHighlights = eventData.filter(
     //   (event) => event.event_highlight === "highlight"
